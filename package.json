@@ -1,13 +1,14 @@
 {
-  "name": "line-flex-message",
+  "name": "node-template-typescript",
   "version": "1.0.0",
-  "description": "Line Flex Message",
+  "description": "Node Modules Template (TypeScript)",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest --config jestconfig.json",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "start": "node lib/index",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
@@ -17,15 +18,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/piyawat37/line-flex-message.git"
+    "url": "git+https://github.com/piyawat37/node-template-typescript.git"
   },
-  "keywords": ["Line", "Flex Message"],
+  "keywords": [],
   "author": "Piyawat Pewmattana",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/piyawat37/line-flex-message/issues"
+    "url": "https://github.com/piyawat37/node-template-typescript/issues"
   },
-  "homepage": "https://github.com/piyawat37/line-flex-message#readme",
+  "homepage": "https://github.com/piyawat37/node-template-typescript#readme",
   "devDependencies": {
     "@types/jest": "^24.0.25",
     "jest": "^24.9.0",
@@ -37,5 +38,15 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "@types/request": "^2.48.4",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.0",
+    "reflect-metadata": "^0.1.13",
+    "request": "^2.88.0",
+    "typeorm": "^0.2.22"
+  }
 }
