@@ -1,5 +1,5 @@
-import {Greeter} from "../index";
+// import { ValuesController } from "../controllers/values.controller";
 
-test('My Greeter', () => {
-    expect(Greeter('Carl')).toBe('Hello Carl');
+test('Passing Test', () => {
+    expect(1).toBe(1);
 });
